@@ -1,0 +1,21 @@
+// manipuladores-de-flujos-de-argumentos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <iomanip>
+
+using namespace std;
+
+void main()
+{
+	float dato = 3.15373737;
+	float dato1 = 4.48484848;
+	cout<<setprecision(2);//determina los numeros decimales que se van a mostrar desde la coma
+	cout<<setfill(' ');//escribir caracteres por delante de la cantidad de digitos que se deberia tener
+	cout<<setw(6)<<dato<<endl;//cantidad de digitos a formatear, que se quiere tener
+	cout<<dato1<<endl;
+
+	getch();
+}
