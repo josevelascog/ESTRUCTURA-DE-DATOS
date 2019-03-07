@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <iomanip>
+
+using namespace std;
+
+void main()
+{
+	int i = 80;
+	cout<<setbase(8)<<i<<endl;
+	cout<<setbase(10)<<i<<endl;
+	cout<<setbase(16)<<i<<endl;
+	getch();
+}
