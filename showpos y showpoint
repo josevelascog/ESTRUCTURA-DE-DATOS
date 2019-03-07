@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <iomanip>
+
+using namespace std;
+
+void main()
+{
+	float j = 1257;
+	cout<<setiosflags(ios::showpoint | ios::showpos)<<endl;//showpos pone el signo positivo por delante; el showpoint pone 0000 despues del numero
+	cout<<(j+5);
+
+	getch();
+}
+
