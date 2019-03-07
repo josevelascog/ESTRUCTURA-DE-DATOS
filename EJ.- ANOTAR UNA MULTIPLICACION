@@ -1,0 +1,55 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <iomanip>
+
+using namespace std;
+int contar_digitos(int a);
+
+void main()
+{
+	int dato , dato2 , cd1 , cd2 , set;
+	cout<<"Ingrese el primer numero"<<endl;
+	cin>>dato;
+	cout<<"Ingrese el segundo numero"<<endl;
+	cin>>dato2;
+	cd1 = contar_digitos(dato);
+	cd2 = contar_digitos(dato2);
+	cout<<setfill(' ');
+	if(cd1>cd2)
+	{
+		set = cd1-1;
+		cout<<dato<<endl;
+		cout<<"x";
+		cout<<setw(set)<<dato2<<endl;
+	}
+	else if(cd2>cd1)
+	{
+		set = cd2-1;
+		cout<<dato2<<endl;
+		cout<<"x";
+		cout<<setw(set)<<dato<<endl;
+	}
+	else
+	{
+		set = cd1-1;
+		cout<<" "<<dato<<endl;
+		cout<<"x";
+		cout<<setw(set)<<dato2<<endl;
+	}
+
+	getch();
+
+}
+
+int contar_digitos(int a)
+{
+	int cd=0;
+	while(a>0)
+	{
+		cd++;
+		a = a/10;
+	}
+
+	return cd;
+}
